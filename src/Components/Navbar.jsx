@@ -11,6 +11,10 @@ const Navbar = () => {
     setMobileDrawerOpen(!mobileDrawerOpen)
   }
 
+  const close_mobile_drawer= () =>{
+    setMobileDrawerOpen(false)
+  }
+
   return (
     <nav className='top-0 z-50 sticky max-w-screen'>
       <div className='font-bold text-neutral-800'>
@@ -42,11 +46,11 @@ const Navbar = () => {
               <div className="top-[87px] fixed right-0 z-20 bg-neutral-900 h-screen w-1/2 py-10 md:w-1/3 ml-4 rounded-xl flex  justify-start items-start
               lg:hidden list-none">
                 <ul className='flex text-bold text-xl flex-col text-white'>
-                    <li className='mb-8 ml-8'><Link to="/" className='hover:text-black p-6 hover:border hover:p-2 hover:border-teal-300 hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Home</Link></li>
-                    <li className='mb-8 ml-8'><Link to="/team" className='hover:text-black p-6 hover:border hover:p-2 hover:border-teal-300 hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Team</Link></li>
-                    <li className='mb-8 ml-8'><Link to="/savings" className='hover:text-black p-6 hover:border hover:p-2 hover:border-teal-300 hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Savings</Link></li>
-                    <li className='mb-8 ml-8'><Link to="/aboutus" className='hover:text-black p-6 hover:border hover:p-2 hover:border-teal-300 hover:bg-slate-200 hover:rounded-xl hover:scale-50'>About Us</Link></li>
-                    <li className='mb-8 ml-8'><Link to="/contactus" className='hover:text-black p-6 hover:border hover:p-2 hover:border-teal-300 hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Contact Us</Link></li>
+                    <li className='mb-8 ml-8 link'><Link onClick={close_mobile_drawer} to="/" className='hover:text-black p-6 hover:border hover:p-2 hover:border-teal-300 hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Home</Link></li>
+                    <li className='mb-8 ml-8 link'><Link onClick={close_mobile_drawer} to="/team" className='hover:text-black p-6 hover:border hover:p-2 hover:border-teal-300 hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Team</Link></li>
+                    <li className='mb-8 ml-8 link'><Link onClick={close_mobile_drawer} to="/savings" className='hover:text-black p-6 hover:border hover:p-2 hover:border-teal-300 hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Savings</Link></li>
+                    <li className='mb-8 ml-8 link'><Link onClick={close_mobile_drawer} to="/aboutus" className='hover:text-black p-6 hover:border hover:p-2 hover:border-teal-300 hover:bg-slate-200 hover:rounded-xl hover:scale-50'>About Us</Link></li>
+                    <li className='mb-8 ml-8 link'><Link onClick={close_mobile_drawer} to="/contactus" className='hover:text-black p-6 hover:border hover:p-2 hover:border-teal-300 hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Contact Us</Link></li>
                   </ul>
               </div>
             )
