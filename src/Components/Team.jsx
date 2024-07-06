@@ -6,7 +6,7 @@ const Team = () => {
   return (
     <>
     <h1 className='text-4xl text-center border-b border-teal-300 mb-4 leading-normal mt-8 p-2'>These are our Precious <span className='bg-gradient-to-r from-teal-200 to-teal-400 text-transparent bg-clip-text font-bold italic'>"Team Members"</span></h1>
-    <div className='text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mx-20 lg:mx-36 text-center mt-14'>
+    <div className='text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mx-14 lg:mx-26 text-center mt-14'>
         {
           team.map((data, index)=>(
         <div className="border border-white mb-8 rounded-lg p-3 flex flex-col justify-center items-center md:mx-4">
@@ -14,7 +14,8 @@ const Team = () => {
             <img src={data.image} alt="profile picture" className='rounded-lg'/>
           </div>
           <h1 className='mt-8 text-xl lg:text-3xl text-teal-400'>{data.name}</h1>
-          <p className='mt-4'>{data.about}</p>
+          <p className='mt-4 text-xl'>{data.about}</p>
+          <p className='mt-4 text-xl'><span className='font-bold'>Location:-  </span>{data.location}</p>
         </div>
           ))}
       </div>
