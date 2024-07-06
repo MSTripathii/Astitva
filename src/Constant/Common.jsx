@@ -43,26 +43,26 @@ export const saving = [
         before: bhuribefore,
         before_text: "We got a call from a wise man told that she is lost and injured",
         treatment: treatmentvideo,
-        treatment_text: "We provided basics medics like painkiller, Antibiotics, etc and helped her to relocated",
+        treatment_text: "We provided basics medics like painkiller, Antibiotics, etc and helped her to relocate",
         after: bhuriafter,
-        after_text: "This is the after treatment condition of bhuri not met to her family and healthy"
+        after_text: "This is the after treatment condition of bhuri now with her family and healthy"
     },
     {
         name: "Bhuri",
         before: bhuribefore,
         before_text: "We got a call from a wise man told that she is lost and injured",
         treatment: treatmentvideo,
-        treatment_text: "We provided basics medics like painkiller, Antibiotics, etc and helped her to relocated",
+        treatment_text: "We provided basics medics like painkiller, Antibiotics, etc and helped her to relocate",
         after: bhuriafter,
-        after_text: "This is the after treatment condition of bhuri not met to her family and healthy"
+        after_text: "This is the after treatment condition of bhuri now with her family and healthy"
     },
     {
         name: "Bhuri",
         before: bhuribefore,
         before_text: "We got a call from a wise man told that she is lost and injured",
         treatment: treatmentvideo,
-        treatment_text: "We provided basics medics like painkiller, Antibiotics, etc and helped her to relocated",
+        treatment_text: "We provided basics medics like painkiller, Antibiotics, etc and helped her to relocate",
         after: bhuriafter,
-        after_text: "This is the after treatment condition of bhuri not met to her family and healthy"
+        after_text: "This is the after treatment condition of bhuri now with her family and healthy"
     }
 ]

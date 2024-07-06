@@ -4,6 +4,7 @@ import { saving } from '../Constant/Common'
 const Savings = () => {
   return (
     <>
+    <h1 className='lg:text-6xl text-4xl text-center mt-5 p-3 border-b border-white leading-normal'>Some of them to whom <span className='text-4xl lg:text-6xl bg-gradient-to-l from-teal-200 to-teal-500 text-transparent bg-clip-text font-bold'>"we helped"</span></h1>
       {
         saving.map((data, index) => (
           <div className=" md:text-2xl flex flex-col lg:flex-row mt-10 lg:my-20 p-3 border border-teal-200 rounded-lg" key={index}>

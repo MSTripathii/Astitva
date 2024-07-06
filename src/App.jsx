@@ -17,7 +17,7 @@ function App() {
     <>
       <Router>
         <Navbar></Navbar>
-        <div className="mx-20">
+        <div className="lg:mx-20 mx-8">
         <Routes>
           <Route path="/" element={<Home/>}></Route>
           <Route path="/team" element={<Team/>}></Route>
