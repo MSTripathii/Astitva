@@ -18,7 +18,7 @@ const Home = () => {
         <Link className='p-3 border border-white hover:bg-teal-300 hover:text-black m-2 rounded-md font-extrabold hover:scale-105 text-center' to="/donate">Donate Us</Link>
         <Link className='p-3 border border-white hover:bg-teal-300 hover:text-black m-2 rounded-md font-extrabold hover:scale-105 text-center' to="/form">Inform Us</Link>
         <a className='p-3 border border-white hover:bg-teal-300 hover:text-black m-2 rounded-md font-extrabold hover:scale-105 text-center' href="https://www.instagram.com/astitv4animals" traget="_blank">Instagram</a>
-        <a className='p-3 border border-white hover:bg-teal-300 hover:text-black m-2 rounded-md font-extrabold hover:scale-105 text-center' href="https://chat.whatsapp.com/LWRkPt9XWqCD2LgpOZLB5p" traget="_blank">Join Group</a>
+        <a className='p-3 border border-white hover:bg-teal-300 hover:text-black m-2 rounded-md font-extrabold hover:scale-105 text-center' href="https://chat.whatsapp.com/JL0seS8jijiJOgKhs2bdLa" traget="_blank">Join Group</a>
       </div>
       <div className="bottom-0 flex justify-center items-end mt-6  max-w-screen overflow-hidden">
         <img className="left-0 hidden md:flex h-[400px]" src={cow} alt="cow" />
