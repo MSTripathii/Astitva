@@ -21,11 +21,11 @@ const Home = () => {
         <a className='p-3 border border-white hover:bg-teal-300 hover:text-black m-2 rounded-md font-extrabold hover:scale-105 text-center' href="https://chat.whatsapp.com/JL0seS8jijiJOgKhs2bdLa" traget="_blank">Join Group</a>
       </div>
       <div className="bottom-0 flex justify-center items-end mt-6  max-w-screen overflow-hidden">
-        <img className="left-0 hidden md:flex h-[400px]" src={cow} alt="cow" />
+        <img className="left-0 hidden md:flex h-[300px]" src={cow} alt="cow" />
         <img className="hidden md:flex h-[300px] " src={squirel} alt="squirel" />
         <img className="flex lg:h-[500px] lg:w-[500px] h-[350px] absolute md:static bottom-0 -z-10" src={dog1} alt="dog1" />
         <img className="hidden md:flex h-[200px]" src={mouse} alt="cat" />
-        <img className="hidden md:flex" src={playdog} alt="playing dog" />
+        <img className="hidden md:flex h-[300px]" src={playdog} alt="playing dog" />
       </div>
     </div>
   )
