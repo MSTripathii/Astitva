@@ -31,8 +31,8 @@ const Navbar = () => {
                 <li><Link to="/" className='p-6 hover:border hover:p-2 hover:border-black hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Home</Link></li>
                 <li><Link to="/team" className='p-6 hover:border hover:p-2 hover:border-black hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Team</Link></li>
                 <li><Link to="/savings" className='p-6 hover:border hover:p-2 hover:border-black hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Savings</Link></li>
+                <li><Link to="/adopt" className='p-6 hover:border hover:p-2 hover:border-black hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Adopt</Link></li>
                 <li><Link to="/aboutus" className='p-6 hover:border hover:p-2 hover:border-black hover:bg-slate-200 hover:rounded-xl hover:scale-50'>About Us</Link></li>
-                <li><Link to="/contactus" className='p-6 hover:border hover:p-2 hover:border-black hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Contact Us</Link></li>
               </ul>
           </div>
 
@@ -49,8 +49,8 @@ const Navbar = () => {
                     <li className='mb-8 ml-8 link'><Link onClick={close_mobile_drawer} to="/" className='hover:text-black p-6 hover:border hover:p-2 hover:border-teal-300 hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Home</Link></li>
                     <li className='mb-8 ml-8 link'><Link onClick={close_mobile_drawer} to="/team" className='hover:text-black p-6 hover:border hover:p-2 hover:border-teal-300 hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Team</Link></li>
                     <li className='mb-8 ml-8 link'><Link onClick={close_mobile_drawer} to="/savings" className='hover:text-black p-6 hover:border hover:p-2 hover:border-teal-300 hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Savings</Link></li>
+                    <li className='mb-8 ml-8 link'><Link onClick={close_mobile_drawer} to="/adopt" className='hover:text-black p-6 hover:border hover:p-2 hover:border-teal-300 hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Adopt</Link></li>
                     <li className='mb-8 ml-8 link'><Link onClick={close_mobile_drawer} to="/aboutus" className='hover:text-black p-6 hover:border hover:p-2 hover:border-teal-300 hover:bg-slate-200 hover:rounded-xl hover:scale-50'>About Us</Link></li>
-                    <li className='mb-8 ml-8 link'><Link onClick={close_mobile_drawer} to="/contactus" className='hover:text-black p-6 hover:border hover:p-2 hover:border-teal-300 hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Contact Us</Link></li>
                   </ul>
               </div>
             )

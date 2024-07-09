@@ -5,7 +5,7 @@ import dog1 from '../src/assets/dog1.png'
 import dog2 from '../src/assets/dog2.png'
 import cat1 from '../src/assets/cat1.png'
 import Donate from './Components/Donate'
-import ContactUs from './Components/ContactUs'
+import Adopt from './Components/Adopt'
 import AboutUs from './Components/AboutUs'
 import Savings from './Components/Savings';
 import Team from './Components/Team';
@@ -23,7 +23,7 @@ function App() {
           <Route path="/team" element={<Team/>}></Route>
           <Route path="/savings" element={<Savings/>}></Route>
           <Route path='/aboutus' element={<AboutUs/>}></Route>
-          <Route path='/contactus' element={<ContactUs/>}></Route>
+          <Route path='/adopt' element={<Adopt/>}></Route>
           <Route path='/Donate' element={<Donate/>}></Route>
           <Route path='/form' element={<Form/>}></Route>
         </Routes>

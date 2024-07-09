@@ -72,3 +72,13 @@ export const saving = [
         after_text: "This is the after treatment condition of bhuri now with her family and healthy"
     }
 ]
+
+export const ForAdoption = [
+    {
+        src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxl4FYrJNSw2uaLqH0BoeNaOlb6KJYjupzIw&s',
+        name: "max",
+        age: "6 Months",
+        contact: 3876483482,
+        location: "Kalyanpur" 
+    }
+]
