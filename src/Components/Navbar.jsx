@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className="bg-teal-500 flex justify-between items-center py-3 lg:px-20 px-10">
 
           <div className="flex items-center">
-            <img src={logo} alt="logo" className='h-16 w-16' />
+            <img src={logo} alt="logo" className='h-16 w-16 rounded-full' />
             <a href="#" className='ml-5 text-xl lg:text-2xl'>Astitva<span className='text-white'>4</span>Animals</a>
           </div>
 

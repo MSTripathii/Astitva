@@ -22,8 +22,8 @@ const Home = () => {
         <Link className='p-3 border border-white hover:bg-teal-300 hover:text-black m-2 rounded-md font-extrabold hover:scale-105 text-center' to="/form">Inform Us</Link>
         {/* <a href="/donate" className='p-3 border border-white hover:bg-teal-300 hover:text-black m-2 rounded-md font-extrabold hover:scale-105 text-center'>Donate</a>
         <a href="/form" className='p-3 border border-white hover:bg-teal-300 hover:text-black m-2 rounded-md font-extrabold hover:scale-105 text-center'>Inform Us</a> */}
-        <a className='p-3 border border-white hover:bg-teal-300 hover:text-black m-2 rounded-md font-extrabold hover:scale-105 text-center' href="https://www.instagram.com/astitv4animals" traget="_blank">Instagram</a>
-        <a className='p-3 border border-white hover:bg-teal-300 hover:text-black m-2 rounded-md font-extrabold hover:scale-105 text-center' href="https://chat.whatsapp.com/JL0seS8jijiJOgKhs2bdLa" traget="_blank">Join Group</a>
+        <a className='p-3 border border-white hover:bg-teal-300 hover:text-black m-2 rounded-md font-extrabold hover:scale-105 text-center' href="https://www.instagram.com/pawwpatrooll/" traget="_blank">Instagram</a>
+        <a className='p-3 border border-white hover:bg-teal-300 hover:text-black m-2 rounded-md font-extrabold hover:scale-105 text-center' href="https://chat.whatsapp.com/LehP1NoNMXC9z6mz1aXLQ4" traget="_blank">Join Group</a>
       </div>
       <div className="bottom-0 flex justify-center items-end mt-6  max-w-screen overflow-hidden">
         <img className="left-0 hidden md:flex h-[300px]" src={cow} alt="cow" />
