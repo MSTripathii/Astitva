@@ -5,7 +5,8 @@ import { team } from '../Constant/Common'
 const Team = () => {
   return (
     <>
-    <h1 className='text-4xl text-center border-b border-teal-300 mb-4 leading-normal mt-8 p-2'>These are our Precious <span className='bg-gradient-to-r from-teal-200 to-teal-400 text-transparent bg-clip-text font-bold italic'>"Team Members"</span></h1>
+    <div id='team'>
+    <h1 className='text-4xl lg:text-6xl text-center border-b border-teal-300 mb-4 leading-normal lg:my-24 my-8 p-2'>These are our Precious <span className='bg-gradient-to-r from-teal-200 to-teal-400 text-transparent bg-clip-text font-bold italic'>"Team Members"</span></h1>
     <div className='text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mx-14 lg:mx-26 text-center mt-14'>
         {
           team.map((data, index)=>(
@@ -19,6 +20,7 @@ const Team = () => {
         </div>
           ))}
       </div>
+    </div>
       </>
   )
 }

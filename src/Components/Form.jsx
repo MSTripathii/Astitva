@@ -2,7 +2,7 @@ import React from 'react'
 
 const Form = () => {
   return (
-    <div className='mt-6 text-center'>
+    <div className='my-10 text-center' id='informus'>
       <form action="https://formspree.io/f/movaqyel" method='POST'>
         <label className='text-2xl' htmlFor="Name" >Name: </label><br /><input type="text"placeholder='Enter Your Name' className='p-2 border border-teal-300 my-4 md:w-1/2 rounded-lg' name='Name'/><br />
         <label className='text-2xl' htmlFor="Location" >Location: </label><br /><input type="text" placeholder='Enter your current Location' className='p-2 border border-teal-300 my-4 md:w-1/2 rounded-lg' name='location'/><br />

@@ -4,6 +4,7 @@ import { ForAdoption } from '../Constant/Common'
 const ContactUs = () => {
   return (
     <>
+    <div id='adopt'>
     <h1 className='text-3xl md:text-4xl lg:text-6xl text-center my-10 border-b border-teal-300 p-3 leading-normal'>Adopt these <span className='bg-gradient-to-r from-teal-200 to-teal-500 text-transparent bg-clip-text
     font-bold italic'>Little One's</span></h1>
     <div className='my-10 grid lg:grid-cols-2 w-full'>
@@ -27,6 +28,7 @@ const ContactUs = () => {
           </div>
         ))
       }
+    </div>
     </div>
     </>
   )

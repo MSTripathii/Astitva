@@ -10,6 +10,7 @@ import AboutUs from './Components/AboutUs'
 import Savings from './Components/Savings';
 import Team from './Components/Team';
 import Form from './Components/Form'
+import Footer from './Components/Footer'
 
 function App() {
 
@@ -19,15 +20,21 @@ function App() {
         <Navbar></Navbar>
         <div className="lg:mx-20 mx-8">
         <Routes>
-          <Route path="/" element={<Home/>}></Route>
+          {/* <Route path="/" element={<Home/>}></Route>
           <Route path="/team" element={<Team/>}></Route>
           <Route path="/savings" element={<Savings/>}></Route>
           <Route path='/aboutus' element={<AboutUs/>}></Route>
-          <Route path='/adopt' element={<Adopt/>}></Route>
+          <Route path='/adopt' element={<Adopt/>}></Route> */}
           <Route path='/Donate' element={<Donate/>}></Route>
           <Route path='/form' element={<Form/>}></Route>
         </Routes>
+        <Home></Home>
+        <Team></Team>
+        <Savings></Savings>
+        <Adopt></Adopt>
+        <AboutUs></AboutUs>
         </div>
+        <Footer></Footer>
       </Router>
       
       {/* <img src={cat1} alt="cat1" className='lg:top-20 absolute hidden lg:inline-flex lg:ml-0 h-[300px] w-[300px]'/> */}
