@@ -9,7 +9,7 @@ const Team = () => {
     <div className='text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mx-14 lg:mx-26 text-center mt-14'>
         {
           team.map((data, index)=>(
-        <div className="border border-white mb-8 rounded-lg p-3 flex flex-col justify-center items-center md:mx-4">
+        <div className="border border-white mb-8 rounded-lg p-3 flex flex-col justify-center items-center md:mx-4 hover:scale-110 hover:text-black hover:bg-white">
           <div className="className='h-1/2 w-full mx-2 border border-teal-300 rounded-lg p-2" key={index}>
             <img src={data.image} alt="profile picture" className='rounded-lg'/>
           </div>
