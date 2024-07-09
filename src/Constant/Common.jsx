@@ -1,4 +1,4 @@
-import profile_pic from '../assets/profile_pic.jpeg'
+import profile_pic from '../assets/user.webp'
 import bhuribefore from '../Treatments/bhuribefore.jpeg'
 import bhuritreatment from '../Treatments/Bhuritreatment.mp4'
 import bhuriafter from '../Treatments/bhuriafter.jpeg'

@@ -11,7 +11,7 @@ const Team = () => {
         {
           team.map((data, index)=>(
         <div className="border border-white mb-8 rounded-lg p-3 flex flex-col justify-center items-center md:mx-4 hover:scale-110 hover:text-black hover:bg-white">
-          <div className="className='h-1/2 w-full mx-2 border border-teal-300 rounded-lg p-2" key={index}>
+          <div className="className='h-1/2 w-full mx-2 border border-teal-300 rounded-lg p-2 flex justify-center" key={index}>
             <img src={data.image} alt="profile picture" className='rounded-lg'/>
           </div>
           <h1 className='mt-8 text-xl lg:text-3xl text-teal-400'>{data.name}</h1>
