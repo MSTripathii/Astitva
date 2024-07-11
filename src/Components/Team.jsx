@@ -7,7 +7,7 @@ const Team = () => {
     <>
     <div id='team'>
     <h1 className='text-4xl lg:text-6xl text-center border-b border-teal-300 mb-4 leading-normal lg:my-24 my-8 p-2'>These are our Precious <span className='bg-gradient-to-r from-teal-200 to-teal-400 text-transparent bg-clip-text font-bold italic'>"Team Members"</span></h1>
-    <div className='text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mx-14 lg:mx-26 text-center mt-14'>
+    <div className='text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mx-14 lg:mx-26 text-center my-14'>
         {
           team.map((data, index)=>(
         <div className="border border-white mb-8 rounded-lg p-3 flex flex-col justify-center items-center md:mx-4 hover:scale-110 hover:text-black hover:bg-white">

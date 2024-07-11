@@ -20,19 +20,19 @@ function App() {
         <Navbar></Navbar>
         <div className="lg:mx-20 mx-8">
         <Routes>
-          {/* <Route path="/" element={<Home/>}></Route>
+          <Route path="/" element={<Home/>}></Route>
           <Route path="/team" element={<Team/>}></Route>
           <Route path="/savings" element={<Savings/>}></Route>
           <Route path='/aboutus' element={<AboutUs/>}></Route>
-          <Route path='/adopt' element={<Adopt/>}></Route> */}
+          <Route path='/adopt' element={<Adopt/>}></Route>
           <Route path='/Donate' element={<Donate/>}></Route>
           <Route path='/form' element={<Form/>}></Route>
         </Routes>
-        <Home></Home>
+        {/* <Home></Home>
         <Team></Team>
         <Savings></Savings>
         <Adopt></Adopt>
-        <AboutUs></AboutUs>
+        <AboutUs></AboutUs> */}
         </div>
         <Footer></Footer>
       </Router>
