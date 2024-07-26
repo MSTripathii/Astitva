@@ -11,11 +11,13 @@ import Savings from './Components/Savings';
 import Team from './Components/Team';
 import Form from './Components/Form'
 import Footer from './Components/Footer'
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
 
   return (
     <>
+    <Analytics></Analytics>
       <Router>
         <Navbar></Navbar>
         <div className="lg:mx-20 mx-8">
