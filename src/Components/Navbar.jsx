@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../assets/logo.png'
+import logo from '../assets/logo1.png'
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Home from './Home';
