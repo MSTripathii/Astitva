@@ -34,9 +34,12 @@ const Navbar = () => {
           <div className="hidden lg:flex list-none">
             <ul className='flex text-xl gap-10'>
               <li><Link to="/" className='p-2 border-transparent border-2 hover:border-black hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Home</Link></li>
-                <li><Link to="/team" className='p-2 border-transparent border-2 hover:border-black hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Team</Link></li>
-                <li><Link to="/savings" className='p-2 border-transparent border-2 hover:border-black hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Savings</Link></li>
-                <li><Link to="/adopt" className='p-2 border-transparent border-2 hover:border-black hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Adopt</Link></li>
+                {/* <li><Link to="/team" className='p-2 border-transparent border-2 hover:border-black hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Team</Link></li> */}
+                {/* <li><Link to="/savings" className='p-2 border-transparent border-2 hover:border-black hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Savings</Link></li> */}
+
+                <li><Link to="/shelters" className='p-2 border-transparent border-2 hover:border-black hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Shelters</Link></li>
+                <li><Link to="/adopt" className='p-2 border-transparent border-2 hover:border-black hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Pet Shops</Link></li>
+                <li><Link to="/adopt" className='p-2 border-transparent border-2 hover:border-black hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Vets</Link></li>
                 <li><Link to="/aboutus" className='p-2 border-transparent border-2 hover:border-black hover:bg-slate-200 hover:rounded-xl hover:scale-50'>About Us</Link></li>
 
               {/* <li><a href='#' className='p-2 border-transparent border-2 hover:border-black hover:bg-slate-200 hover:rounded-xl hover:scale-50'>Home</a></li>

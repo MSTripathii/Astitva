@@ -3,6 +3,8 @@ import bhuribefore from '../assets/before.jpg'
 import bhuritreatment from '../Treatments/Bhuritreatment.mp4'
 import bhuriafter from '../assets/after.jpg'
 import treatmentvideo from '../Treatments/treatmentvideo.mp4'
+import logo from '../assets/logo1.png'
+import calf from '../assets/calf.png'
 
 export const team = [
     {
@@ -122,4 +124,62 @@ export const ForAdoption = [
         location: "Kalyanpur",
         quote: "Money can buy you a fine dog, but only love can make him wag his tail." 
     }
+]
+
+export const shelters = [
+    {
+        src: logo,
+        shelter_name: "Animal Shelter Kanpur",
+        Location: 'Barra 2, near road',
+        Contact: 8909909809,
+        Ratings: 100,
+        Active_Inactive: "Active",
+        slogan: "An Evening of Whiskers and Wishes"
+    },
+    {
+        src: logo,
+        shelter_name: "Animal Shelter Kanpur",
+        Location: 'Barra 2, near road',
+        Contact: 8909909809,
+        Ratings: 100,
+        Active_Inactive: "Active",
+        slogan: "An Evening of Whiskers and Wishes"
+    },
+    {
+        src: calf,
+        shelter_name: "Animal Shelter Kanpur",
+        Location: 'Barra 2, near road',
+        Contact: 8909909809,
+        Ratings: 100,
+        Active_Inactive: "Active",
+        slogan: "An Evening of Whiskers and Wishes"
+    },
+    {
+        src: calf,
+        shelter_name: "Animal Shelter Kanpur",
+        Location: 'Barra 2, near road',
+        Contact: 8909909809,
+        Ratings: 100,
+        Active_Inactive: "Active",
+        slogan: "An Evening of Whiskers and Wishes"
+    },
+    {
+        src: logo,
+        shelter_name: "Animal Shelter Kanpur",
+        Location: 'Barra 2, near road',
+        Contact: 8909909809,
+        Ratings: 100,
+        Active_Inactive: "Active",
+        slogan: "An Evening of Whiskers and Wishes"
+    },
+    {
+        src: logo,
+        shelter_name: "Animal Shelter Kanpur",
+        Location: 'Barra 2, near road',
+        Contact: 8909909809,
+        Ratings: 100,
+        Active_Inactive: "Active",
+        slogan: "An Evening of Whiskers and Wishes"
+    }
+
 ]

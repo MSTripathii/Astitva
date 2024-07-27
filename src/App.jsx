@@ -12,6 +12,7 @@ import Team from './Components/Team';
 import Form from './Components/Form'
 import Footer from './Components/Footer'
 import { Analytics } from "@vercel/analytics/react"
+import Shelters from './Components/Shelters'
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
     <Analytics></Analytics>
       <Router>
         <Navbar></Navbar>
-        <div className="lg:mx-20 mx-8">
+        <div className="lg:mx-20 mx-5">
         <Routes>
           <Route path="/" element={<Home/>}></Route>
           <Route path="/team" element={<Team/>}></Route>
@@ -29,6 +30,7 @@ function App() {
           <Route path='/adopt' element={<Adopt/>}></Route>
           <Route path='/Donate' element={<Donate/>}></Route>
           <Route path='/form' element={<Form/>}></Route>
+          <Route path='/shelters' element={<Shelters/>}></Route>
         </Routes>
         {/* <Home></Home>
         <Team></Team>

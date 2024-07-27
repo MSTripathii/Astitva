@@ -20,7 +20,7 @@ const Home = () => {
         <div className="mt-14 md:mt-20 flex flex-col justify-center">
           <div className="text-center">
             <h1 className='text-4xl lg:text-7xl leading-normal'>We Live To <span>Make</span> <span className=' bg-gradient-to-r from-teal-200 to-teal-600 text-transparent bg-clip-text font-bold italic'>"Them Live"</span></h1>
-            <p className='text-xl mt-8 leading-normal italic'>Our team is giving their best to support for the existence of these animals.</p>
+            <p className='text-xl mt-8 leading-normal italic'>Our Community is giving their best to support for the existence of needy animals.</p>
           </div>
           <div className="md:flex md:justify-center grid grid-cols-2 content-center mt-10">
             <Link className='p-3 border border-white hover:bg-teal-300 hover:text-black m-2 rounded-md font-extrabold hover:scale-105 text-center' to="/donate">Donate Us</Link>
