@@ -16,6 +16,8 @@ import { Analytics } from "@vercel/analytics/react"
 import Shelters from './Components/Shelters'
 import Login from './Authentication/Login'
 import SignUp from './Authentication/SignUp'
+import DefaultLayout from "./layouts/DefaultLayout";
+import ProtectedLayout from "./layouts/ProtectedLayout";
 
 
 function App() {
@@ -35,8 +37,17 @@ function App() {
           <Route path='/Donate' element={<Donate/>}></Route>
           <Route path='/form' element={<Form/>}></Route>
           <Route path='/shelters' element={<Shelters/>}></Route>
-          <Route path='/login' element={<Login/>}></Route>
-          <Route path='/signup' element={<SignUp/>}></Route>
+          {/* <Route path='/login' element={<Login/>}></Route> */}
+          {/* <Route path='/signup' element={<SignUp/>}></Route> */}
+
+          <Route element={<DefaultLayout />}>
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp/>} />
+        </Route>
+
+        {/* <Route element={<ProtectedLayout />}>
+          <Route path="/" element={<Home />} />
+        </Route> */}
           
         </Routes>
         {/* <Home></Home>
