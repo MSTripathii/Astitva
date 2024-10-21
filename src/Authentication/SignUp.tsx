@@ -32,14 +32,24 @@ const SignUp = () => {
             alignItems: "center",
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: "primary.light" }}>
-            <LockOutlined />
+          <Avatar sx={{ m: 1, bgcolor: "#000000", width: '70px', height: '70px'}}>
+            <LockOutlined sx={{ fontSize: '50px' }}/>
           </Avatar>
-          <Typography variant="h5">Register</Typography>
+          <Typography variant="h4">SignUp</Typography>
           <Box sx={{ mt: 3 }}>
             <Grid container spacing={2}>
               <Grid item xs={12}>
                 <TextField
+                sx={{
+                  '& .MuiOutlinedInput-root': {
+                    '&.Mui-focused fieldset': {
+                      borderColor: '#4DB6AC', // Changes the border color on focus
+                    },
+                  },
+                  '& label.Mui-focused': {
+                    color: '#000', // Changes the label color on focus
+                  },
+                }}
                   name="name"
                   required
                   fullWidth
@@ -53,6 +63,16 @@ const SignUp = () => {
 
               <Grid item xs={12}>
                 <TextField
+                sx={{
+                  '& .MuiOutlinedInput-root': {
+                    '&.Mui-focused fieldset': {
+                      borderColor: '#4DB6AC', // Changes the border color on focus
+                    },
+                  },
+                  '& label.Mui-focused': {
+                    color: '#000', // Changes the label color on focus
+                  },
+                }}
                   required
                   fullWidth
                   id="email"
@@ -64,6 +84,16 @@ const SignUp = () => {
               </Grid>
               <Grid item xs={12}>
                 <TextField
+                sx={{
+                  '& .MuiOutlinedInput-root': {
+                    '&.Mui-focused fieldset': {
+                      borderColor: '#4DB6AC', // Changes the border color on focus
+                    },
+                  },
+                  '& label.Mui-focused': {
+                    color: '#000', // Changes the label color on focus
+                  },
+                }}
                   required
                   fullWidth
                   name="password"
@@ -78,14 +108,14 @@ const SignUp = () => {
             <Button
               fullWidth
               variant="contained"
-              sx={{ mt: 3, mb: 2 }}
+              sx={{ mt: 3, mb: 2 , fontSize:"20px", backgroundColor: '#000000', color: '#fff' }}
               onClick={handleRegister}
             >
-              Register
+              Sign-Up
             </Button>
-            <Grid container justifyContent="flex-end">
+            <Grid container justifyContent="flex-start">
               <Grid item>
-                <Link to="/login">Already have an account? Login</Link>
+                <Link to="/login">Already have an account?  <span className="text-teal-600">  Login</span></Link>
               </Grid>
             </Grid>
           </Box>
