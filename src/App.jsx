@@ -13,6 +13,9 @@ import Form from './Components/Form'
 import Footer from './Components/Footer'
 import { Analytics } from "@vercel/analytics/react"
 import Shelters from './Components/Shelters'
+import Login from './Authentication/Login'
+import SignUp from './Authentication/SignUp'
+
 
 function App() {
 
@@ -31,6 +34,9 @@ function App() {
           <Route path='/Donate' element={<Donate/>}></Route>
           <Route path='/form' element={<Form/>}></Route>
           <Route path='/shelters' element={<Shelters/>}></Route>
+          <Route path='/login' element={<Login/>}></Route>
+          <Route path='/signup' element={<SignUp/>}></Route>
+          
         </Routes>
         {/* <Home></Home>
         <Team></Team>

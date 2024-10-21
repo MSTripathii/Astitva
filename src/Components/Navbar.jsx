@@ -51,8 +51,12 @@ const Navbar = () => {
           </div>
 
           <div className="hidden lg:flex gap-5 text-xl">
-            <a href="" className='p-3 bg-white border border-black rounded-lg hover:scale-110 hover:bg-black hover:text-white'>Login</a>
-            <a href="" className='p-3 bg-white border border-black rounded-lg hover:scale-110 hover:bg-black hover:text-white'>SignUp</a>
+            <ul className='flex text-xl gap-10'>
+            <li><Link to="/login" className='p-3 bg-white border border-black rounded-lg hover:scale-110 hover:bg-black hover:text-white'>Login</Link></li>
+            <li><Link to="/signup" className='p-3 bg-white border border-black rounded-lg hover:scale-110 hover:bg-black hover:text-white'>SignUp</Link></li>
+            </ul>
+            {/* <a href="" className='p-3 bg-white border border-black rounded-lg hover:scale-110 hover:bg-black hover:text-white'>Login</a>
+            <a href="" className='p-3 bg-white border border-black rounded-lg hover:scale-110 hover:bg-black hover:text-white'>SignUp</a> */}
 
           </div>
 
