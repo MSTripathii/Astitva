@@ -9,7 +9,7 @@ dotenv.config();
 interface OpenAIResponse {
     choices: Array<{
         message: {
-            content: string;
+            content: string ;
         };
     }>;
 }
