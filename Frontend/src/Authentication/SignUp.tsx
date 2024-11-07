@@ -3,6 +3,7 @@ import { LockOutlined } from "@mui/icons-material";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axiosInstance from "../api/axiosInstance";
+import '../index.css';
 
 const SignUp = () => {
   const [name, setName] = useState("");
@@ -23,7 +24,7 @@ const SignUp = () => {
   };
 
   return (
-    <Container maxWidth="xs">
+    <Container className="" maxWidth="xs">
       <CssBaseline />
       <Box
         sx={{

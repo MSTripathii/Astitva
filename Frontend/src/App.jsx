@@ -18,6 +18,7 @@ import Login from './Authentication/Login'
 import SignUp from './Authentication/SignUp'
 import DefaultLayout from "./layouts/DefaultLayout";
 import ProtectedLayout from "./layouts/ProtectedLayout";
+import Chatbot from './Components/Chatbot'
 
 
 function App() {
@@ -65,7 +66,7 @@ function App() {
         <Adopt></Adopt>
         <AboutUs></AboutUs> */}
       </div>
-
+          <Chatbot></Chatbot>
       {/* Footer will stay at the bottom */}
       <Footer />
     </div>

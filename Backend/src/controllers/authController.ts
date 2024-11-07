@@ -4,12 +4,17 @@ import { generateToken, clearToken } from "../utils/auth";
 
 const registerUser = async (req: Request, res: Response) => {
   const { name, email, password } = req.body;
+  console.log(name)
+  console.log(email)
+  console.log(password)
   const userExists = await User.findOne({ email });
 
   if (userExists) {
     res.status(400).json({ message: "The user already exists" });
   }
-
+  console.log(name)
+  console.log(email)
+  console.log(password)
   const user = await User.create({
     name,
     email,

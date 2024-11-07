@@ -22,7 +22,7 @@ const Login = () => {
   };
 
   return (
-    <Container maxWidth="xs">
+    <Container className="hello" maxWidth="xs">
       <CssBaseline />
       <Box
         sx={{
@@ -31,7 +31,7 @@ const Login = () => {
           flexDirection: "column",
           alignItems: "center",
         }}
-      >
+        className="hello">
         <Avatar sx={{ m: 1, bgcolor: "#000000", width: "70px", height: "70px" }}>
           <LockOutlined sx={{ fontSize: "50px" }} />
         </Avatar>
