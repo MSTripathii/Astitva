@@ -13,36 +13,33 @@ const Chatbot: React.FC = () => {
 
     const toggleChat = () => setIsOpen(!isOpen);
 
-    // Predefined questions
-    const predefinedQuestions: string[] = [
-        "What assistance can I provide until help arrives?",
-        "What medicines can I give the animal?",
-        "How do I report a critical case?",
-    ];
-
     const sendMessage = async (message: string) => {
-        // Add user's message to the chat
+        if (!message.trim()) return;
+
         const userMessage: Message = { role: "user", content: message };
         setMessages((prevMessages) => [...prevMessages, userMessage]);
         setInput("");
 
-        // Send message to the backend API
         try {
-            const response = await fetch('http://localhost:8000', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ message })
+            const response = await fetch("http://localhost:8000/api/chat", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ message: userMessage.content })
             });
+
+            if (!response.ok) throw new Error("Server error");
 
             const data = await response.json();
             const botMessage: Message = { role: "bot", content: data.reply };
-
-            // Add bot's reply to the chat
             setMessages((prevMessages) => [...prevMessages, botMessage]);
         } catch (error) {
             console.error("Error:", error);
-            const errorMessage: Message = { role: "bot", content: "Sorry, I'm having trouble responding right now." };
-            setMessages((prevMessages) => [...prevMessages, errorMessage]);
+            setMessages((prevMessages) => [
+                ...prevMessages,
+                { role: "bot", content: "Sorry, I'm having trouble responding right no." }
+            ]);
         }
     };
 
@@ -61,13 +58,6 @@ const Chatbot: React.FC = () => {
                             <div key={index} className={`message ${msg.role}`}>
                                 {msg.content}
                             </div>
-                        ))}
-                    </div>
-                    <div className="predefined-questions">
-                        {predefinedQuestions.map((question, index) => (
-                            <button key={index} onClick={() => sendMessage(question)}>
-                                {question}
-                            </button>
                         ))}
                     </div>
                     <div className="input-area">
