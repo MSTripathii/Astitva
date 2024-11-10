@@ -72,12 +72,12 @@ export const getChatResponse = async (req: Request, res: Response): Promise<void
 
     try {
         // Ensure the API key is correctly set
-        const apiKey = process.env.GENAI_API_KEY;
+        const apiKey = "AIzaSyBuxEbHDkYtxWOgY-NmhTusJLB6KrsfVg0";
         if (!apiKey) {
             throw new Error("API key is missing");
         }
 
-        const genAI = new GoogleGenerativeAI(apiKey);
+        const genAI = new GoogleGenerativeAI("AIzaSyBuxEbHDkYtxWOgY-NmhTusJLB6KrsfVg0");
         const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
         const result = await model.generateContent(userMessage);
