@@ -19,7 +19,7 @@ const SignUp = () => {
       navigate("/dashboard"); 
     } catch (error) {
       console.error("Registration failed:", error);
-      alert("Registration failed, please try again.");
+      alert(error );
     }
   };
 
