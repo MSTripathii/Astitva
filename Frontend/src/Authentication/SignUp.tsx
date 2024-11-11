@@ -16,7 +16,7 @@ const SignUp = () => {
       const response = await axiosInstance.post("/register", { name, email, password });
       console.log("Registration successful:", response.data);
       localStorage.setItem("userInfo", JSON.stringify(response.data));
-      navigate("/dashboard"); // redirect after successful registration
+      navigate("/dashboard"); 
     } catch (error) {
       console.error("Registration failed:", error);
       alert("Registration failed, please try again.");

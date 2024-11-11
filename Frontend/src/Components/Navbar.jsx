@@ -21,7 +21,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='top-0 z-50 sticky max-w-screen'>
+    <nav className='hell top-0 z-50 sticky max-w-screen'>
       <div className='font-bold text-neutral-800'>
         <div className="bg-teal-500 flex justify-around items-center py-3 lg:px-20 px-10">
 
