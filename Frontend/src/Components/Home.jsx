@@ -12,12 +12,14 @@ import Savings from './Savings'
 import Adopt from './Adopt'
 import AboutUs from './AboutUs'
 import { BackgroundLines } from "./ui/background-lines";
+import NormalUserDashboard from '../dashboard/NormalDash'
+import AdminDashboard from '../dashboard/AdminDash'
 const Home = () => {
 
   return (
     <>
   <BackgroundLines >
-      <div className="z-50" id='home'>
+      <div className="" id='home'>
         <div className="mt-14 md:mt-20 flex flex-col justify-center">
           <div className="text-center">
             <h1 className='text-4xl lg:text-7xl leading-normal'>We Live To <span>Make</span> <span className=' bg-gradient-to-r from-teal-200 to-teal-600 text-transparent bg-clip-text font-bold italic'>"Them Live"</span></h1>
@@ -45,6 +47,8 @@ const Home = () => {
       <Savings />
       <Adopt />
       <AboutUs />
+      <NormalUserDashboard/>
+      <AdminDashboard></AdminDashboard>
     </>
   )
 }

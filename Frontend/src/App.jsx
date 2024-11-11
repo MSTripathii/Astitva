@@ -19,6 +19,8 @@ import SignUp from './Authentication/SignUp'
 import DefaultLayout from "./layouts/DefaultLayout";
 import ProtectedLayout from "./layouts/ProtectedLayout";
 import Chatbot from './Components/Chatbot'
+import NormalUserDashboard from './dashboard/NormalDash'
+import AdminDashboard from './dashboard/AdminDash'
 
 
 function App() {
