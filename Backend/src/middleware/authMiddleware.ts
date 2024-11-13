@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import jwt, { JwtPayload } from "jsonwebtoken";
-import User, { IUserModel } from "../models/User";
+import User from "../models/User";
 import asyncHandler from "express-async-handler";
 import { AuthenticationError } from "./errorMiddleware";
 
@@ -21,18 +21,18 @@ const authenticate = asyncHandler(
                 throw new AuthenticationError("UserId not found");
             }
 
-            const user = await User.findById(decoded.userId, "_id name email") as IUserModel;
+            // const user = await User.findById(decoded.userId, "_id name email") as IUserModel;
 
-            if (!user) {
-                throw new AuthenticationError("User not found");
-            }
+            // if (!user) {
+            //     throw new AuthenticationError("User not found");
+            // }
 
             // Convert _id to string and assign user
-            req.user = {
-                _id: user._id as string, // Convert ObjectId to string
-                name: user.name,
-                email: user.email,
-            };
+            // req.User = {
+            //     _id: user._id as string, // Convert ObjectId to string
+            //     name: user.name,
+            //     email: user.email,
+            // };
 
             next();
         } catch (e) {

@@ -22,7 +22,7 @@ const registerUser = async (req: Request, res: Response) => {
   });
 
   if (user) {
-    generateToken(res, user.id);
+    generateToken(res);
     res.status(201).json({
       id: user._id,
       name: user.name,
@@ -38,7 +38,7 @@ const authenticateUser = async (req: Request, res: Response) => {
   const user = await User.findOne({ email });
 
   if (user && (await user.comparePassword(password))) {
-    generateToken(res, user.id);
+    generateToken(res, );
     res.status(201).json({
       id: user._id,
       name: user.name,

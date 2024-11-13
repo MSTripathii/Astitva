@@ -61,6 +61,7 @@
 //         res.status(500).json({ reply: "Sorry, I'm having trouble responding right now." });
 //     }
 // };
+
 import { Request, Response } from 'express';
 import dotenv from 'dotenv';
 import { GoogleGenerativeAI } from "@google/generative-ai";
@@ -69,15 +70,15 @@ dotenv.config();
 
 export const getChatResponse = async (req: Request, res: Response): Promise<void> => {
     const userMessage: string = req.body.message;
-
+    // console.log(userMessage);
     try {
         // Ensure the API key is correctly set
-        const apiKey = "AIzaSyBuxEbHDkYtxWOgY-NmhTusJLB6KrsfVg0";
-        if (!apiKey) {
-            throw new Error("API key is missing");
-        }
+        const apiKey = "AIzaSyCXL98QXpc0ltzWQekEN108UyUAd0eZr1g";
+        // if (!apiKey) {
+        //     throw new Error("API key is missing");
+        // }
 
-        const genAI = new GoogleGenerativeAI("AIzaSyBuxEbHDkYtxWOgY-NmhTusJLB6KrsfVg0");
+        const genAI = new GoogleGenerativeAI("AIzaSyCXL98QXpc0ltzWQekEN108UyUAd0eZr1g");
         const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
         const result = await model.generateContent(userMessage);
