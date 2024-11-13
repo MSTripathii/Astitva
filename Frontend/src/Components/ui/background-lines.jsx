@@ -3,7 +3,7 @@ import { cn } from "../lib/utils";
 import { motion } from "framer-motion";
 import React from "react";
 
-export const BackgroundLines = ({
+ const BackgroundLines = ({
   children,
   className,
   svgOptions
@@ -128,3 +128,4 @@ const SVG = ({
     </motion.svg>)
   );
 };
+export default BackgroundLines;

@@ -19,9 +19,7 @@ import SignUp from './Authentication/SignUp'
 import DefaultLayout from "./layouts/DefaultLayout";
 import ProtectedLayout from "./layouts/ProtectedLayout";
 import Chatbot from './Components/Chatbot'
-import NormalUserDashboard from './dashboard/NormalDash'
-import AdminDashboard from './dashboard/AdminDash'
-
+import UserDashboard from './Components/Dashboard'
 
 function App() {
 
@@ -36,7 +34,7 @@ function App() {
       <Navbar />
 
       {/* Main content container, set it to flex-grow to take up available space */}
-      <div className="lg:mx-20 mx-5 mb-32 flex-grow">
+      <div className="  mb-32 flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/team" element={<Team />} />
@@ -46,9 +44,9 @@ function App() {
           <Route path="/donate" element={<Donate />} />
           <Route path="/form" element={<Form />} />
           <Route path="/shelters" element={<Shelters />} />
-          {/* <Route path='/login' element={<Login/>}></Route> */}
-          {/* <Route path='/signup' element={<SignUp/>}></Route> */}
-
+          <Route path='/login' element={<Login/>}></Route>
+          <Route path='/signup' element={<SignUp/>}></Route>
+          <Route path='/dashboard' element={<UserDashboard/>}></Route>
           {/* Default Layout Routes */}
           <Route element={<DefaultLayout />}>
             <Route path="/login" element={<Login />} />

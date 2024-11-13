@@ -1,9 +1,8 @@
-import axios from "axios";
-import { BACKEND_BASE_URL } from "../Constant";
+// api/axiosInstance.js
+import axios from 'axios';
 
-// Create an Axios instance with default options
 const axiosInstance = axios.create({
-  baseURL: BACKEND_BASE_URL,
+  baseURL: 'http://localhost:8000',
   withCredentials: true,
 });
 
